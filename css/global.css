@@ -1,0 +1,28 @@
+root {
+    --title-color: rgb(37, 40, 43);
+    --text-color: rgb(130, 130, 130);
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background: rgb(229, 229, 229);
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--title-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+a {
+    color: var(--title-color);
+}

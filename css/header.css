@@ -1,0 +1,154 @@
+/*Header style*/
+header {
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header__logo {
+    color: rgb(37, 40, 43);
+    line-height: 180%;
+    font-weight: 700;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.header__link:hover {
+    opacity: 0.7;
+}
+
+.header__burger {
+    display: none;
+    background: none;
+    align-items: center;
+    gap: 4px;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.header__line {
+    background-color: rgb(37, 40, 43);
+    width: 24px;
+    height: 3px;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.header__menu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 15rem;
+    right: 50%;
+    z-index: 10;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.header__menu.active {
+    display: block;
+    opacity: 1;
+    animation: slideIn .7s ease-in-out forwards;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+    animation: slideIn .7s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 50%;
+    }
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(253, 196, 53);
+    z-index: 5;
+}
+
+
+
+.header__burger.active .header__line:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.header__burger.active .header__line:nth-child(2) {
+    opacity: 0;
+}
+
+.header__burger.active .header__line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+}
+/* ========================================================== */
+
+/*  Media   */
+@media (max-width: 767px) {
+    .header__burger {
+        display: flex;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    @keyframes slideIn {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: 45%;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    @keyframes slideIn {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: 40%;
+        }
+    }
+}
