@@ -1,12 +1,13 @@
 root {
     --title-color: rgb(37, 40, 43);
     --text-color: rgb(130, 130, 130);
+    --main-text-title: rgb(51, 51, 51);
 }
 
 body {
     font-family: sans-serif;
     font-size: 18px;
-    background: rgb(229, 229, 229);
+    background: #fff;
     font-weight: 500;
 }
 
@@ -18,7 +19,7 @@ body {
 
 h1 {
     color: var(--title-color);
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 700;
     line-height: 120%;
 }

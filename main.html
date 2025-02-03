@@ -37,7 +37,51 @@
     </div>
 </div>
 </header>
-<main></main>
+<main>
+    <section class="welcome">
+        <div class="container welcome__container">
+            <div class="welcome__info">
+                <p class="welcome__descr">
+                    UI/UX Designer
+                </p>
+                <h1 class="welcome__title">
+                    Hello,  my name is Madelyn Torff
+                </h1>
+                <p class="welcome__subtitle">
+                    Short text with details about you, what you do or your professional career. You can add more information on the about page.
+                </p>
+                <div class="welcome__btns">
+                    <a href="#" class="welcome__btn" id="#" type="button">Projects</a>
+                    <a href="#" class="welcome__btn" id="open-popup" type="button">Recording</a>
+                </div>
+                <div class="welcome__popup">
+                    <form class="welcome__form">
+                        <label class="welcome__label" for="name">Name:</label>
+                        <input class="welcome__input" type="text" id="name" name="name" required>
+
+                        <label class="welcome__label" for="email">Email:</label>
+                        <input class="welcome__input" type="email" id="email" name="email" required>
+
+                        <label class="welcome__label" for="message">Message:</label>
+                        <textarea class="welcome__textarea" id="message" name="message" rows="4" required></textarea>
+
+                        <button class="welcome__btn-send" type="submit">Send</button>
+                        <button class="welcome__btn-close" type="button">X</button>
+                    </form>
+                </div>
+            </div>
+            <img src="./public/welcome-woman.jpg" alt="Woman smelling flowers" class="welcome__img">
+        </div>
+    </section>
+    <section class="project">
+        <div class="container project__container">
+            <h2 class="project__title">
+                Projects
+            </h2>
+            <span class="project__line"></span>
+        </div>
+    </section>
+</main>
 <footer></footer>
 </body>
 </html>
