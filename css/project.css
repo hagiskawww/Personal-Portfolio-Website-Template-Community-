@@ -1,0 +1,92 @@
+.project {
+    padding-top: 144px;
+}
+
+.project__title {
+    color: rgb(37, 40, 43);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.project__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.project__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.project__card-title {
+    color: rgb(37, 40, 43);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+
+    padding-bottom: 24px;
+}
+
+.project__card-subtitle {
+    color: rgb(130, 130, 130);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 400px;
+
+    padding-bottom: 24px;
+}
+
+.project__card-btn {
+    box-sizing: border-box;
+    border: 2px solid rgb(37, 40, 43);
+    border-radius: 8px;
+    transition: .4s;
+    padding: 12px 24px;
+    background: none;
+}
+
+.project__card-btn:hover {
+    border: 2px solid rgb(253, 196, 53);
+    background: rgb(253, 196, 53);
+}
+
+.project__img {
+    max-width: 496px;
+    max-height: 526px;
+    border-radius: 0 24px 24px 0;
+}
+
+.project__item--btn {
+    padding-top: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__btn {
+    color: rgb(37, 40, 43);
+    font-size: 24px;
+
+    border: 2px solid rgb(37, 40, 43);
+    border-radius: 8px;
+    transition: .4s;
+    padding: 12px 24px;
+    background: none;
+}
+
+.project__btn:hover {
+    border: 2px solid rgb(253, 196, 53);
+    background: rgb(253, 196, 53);
+}
+
+
